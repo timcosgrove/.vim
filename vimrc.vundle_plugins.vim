@@ -1,4 +1,4 @@
-
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-ruby/vim-ruby'

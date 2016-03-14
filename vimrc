@@ -1,4 +1,7 @@
-source $VIMCONFIG/vimrc.vundle_setup.vim
+" get vimrc path
+let g:vimrc_dir = fnamemodify(resolve(expand('<sfile>:p')), ':h')
+" setup Vundle
+execute "source ".g:vimrc_dir."/vimrc.vundle_setup.vim"
 
 " syntax/files
 syntax on             " Enable syntax highlighting
