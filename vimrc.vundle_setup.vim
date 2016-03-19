@@ -6,7 +6,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " source our plugins list
-execute "source ".g:vimrc_dir."/vimrc.vundle_plugins.vim"
+call g:SourceConfigFilesIn('rcplugins')
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

@@ -1,3 +1,16 @@
+let mapleader = ","
+
+" stolen shamelessly from
+" https://github.com/christoomey/dotfiles/blob/master/vim/vimrc
+function! g:SourceConfigFilesIn(directory)
+  let directory_splat = '~/.vim/' . a:directory . '/*'
+  for config_file in split(glob(directory_splat), '\n')
+    if filereadable(config_file)
+        execute 'source' config_file
+    endif
+  endfor
+endfunction
+
 " get vimrc path
 let g:vimrc_dir = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 " setup Vundle
@@ -14,6 +27,7 @@ set number
 
 " default tab/spaces
 set tabstop=2
+set softtabstop=2
 set shiftwidth=2
 set expandtab
 

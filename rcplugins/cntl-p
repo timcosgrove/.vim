@@ -1,0 +1,2 @@
+" ctrlp: Fuzzy finder. https://github.com/ctrlpvim/ctrlp.vim
+Plugin 'ctrlpvim/ctrlp.vim'
