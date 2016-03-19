@@ -39,6 +39,8 @@ nmap j gj
 
 " leader commands
 nmap <leader>vr :tabnew $MYVIMRC<cr>
+nmap <leader>sv :so $MYVIMRC<cr>
+nmap <leader>e :e .<cr>
 
 " insert mode mappings
 " control s to save; requires disabling flow control for your shell.
