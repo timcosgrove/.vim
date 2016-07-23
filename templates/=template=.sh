@@ -6,4 +6,6 @@ set -o nounset
 set -o pipefail
 # set -o xtrace
 
+IFS=$'\t\n'
+
 %HERE%
